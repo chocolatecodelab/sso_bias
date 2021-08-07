@@ -24,4 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/posts', 'PostsController@index');
 
-Route::get('/developers', 'DevelopersController@index');
+// route Developer
+Route::get('/developers', 'DevelopersController@index')->name('developers');
+Route::get('/developers/delete/{user_id}', 'DevelopersController@delete');

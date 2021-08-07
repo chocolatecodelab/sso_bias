@@ -12,7 +12,6 @@
                     <span>
                         OAuth Clients
                     </span>
-
                     <a class="action-link" tabindex="-1" @click="showCreateClientForm">
                         Create New Client
                     </a>
