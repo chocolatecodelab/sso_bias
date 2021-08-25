@@ -84,8 +84,8 @@
                     SSO Bias Education
                 </div>
                 <div class="links"> 
-                    <a href="http://kepegawaian.bias-education.com/" target="_blank">Kepegawaian</a>
-                    <a href="http://akademik.bias-education.com/" target="_blank">Akademik</a>
+                    <a href="http://kepegawaian.bias-education.com:8080/" target="_blank">Kepegawaian</a>
+                    <a href="http://akademik.bias-education.com:8080/" target="_blank">Akademik</a>
                 </div>
             </div>
         </div>

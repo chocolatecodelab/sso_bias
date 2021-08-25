@@ -18,7 +18,7 @@
                         <a href="/oauth/redirect">Authorize from server</a>
                     @endif
                     @if(auth()->user()->token)
-                    <a href="http://akademik.bias-education.com/" target="_blank">Akademik</a>
+                    <a href="http://akademik.bias-education.com:8080/" target="_blank">Akademik</a>
                     @endif
 
                     @foreach ($posts as $post)

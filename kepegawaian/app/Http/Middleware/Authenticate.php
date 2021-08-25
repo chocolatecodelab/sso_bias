@@ -15,7 +15,7 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return url('http://sso.bias-education.com/login');
+            return url('http://sso.bias-education.com:8080/login');
         }
     }
 }

@@ -18,7 +18,7 @@
                         <a href="/oauth/redirect">Authorize from server</a>
                         @endif
                         @if(auth()->user()->token)
-                        <a href="http://kepegawaian.bias-education.com/" target="_blank">Kepegawaian</a>
+                        <a href="http://kepegawaian.bias-education.com:8080/" target="_blank">Kepegawaian</a>
                         @endif
                     
                     

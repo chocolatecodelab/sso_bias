@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\GoogleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -27,3 +30,8 @@ Route::get('/posts', 'PostsController@index');
 // route Developer
 Route::get('/developers', 'DevelopersController@index')->name('developers');
 Route::get('/developers/delete/{user_id}', 'DevelopersController@delete');
+
+// route Google 
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);

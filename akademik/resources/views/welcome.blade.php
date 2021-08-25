@@ -69,7 +69,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ url('http://sso.bias-education.com/login') }}">Login</a>
+                        <a href="{{ url('http://sso.bias-education.com:8080/login') }}">Login</a>
 
                         {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
@@ -82,8 +82,8 @@
                     Akademik
                 </div>
                 <div class="links"> 
-                    <a href="http://akademik.bias-education.com/home">Dashboard Akademik</a>
-                    <a href="http://kepegawaian.bias-education.com/" target="_blank">App Kepegawaian</a>
+                    <a href="http://akademik.bias-education.com:8080/home">Dashboard Akademik</a>
+                    <a href="http://kepegawaian.bias-education.com:8080/" target="_blank">App Kepegawaian</a>
                 </div>
             </div>
         </div>

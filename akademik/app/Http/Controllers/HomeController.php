@@ -40,14 +40,6 @@ class HomeController extends Controller
             }
             return view('welcome');
         };
-            // DB if delete oauth_access_token, we're going to delete token login user
-            if(DB::table('oauth_access_tokens')->where('revoked', 1)->delete()) {
-                if(auth()->user()->token != null) {
-                    DB::table('oauth_tokens')->where('user_id', auth()->user()->token->user_id)->delete();
-                   return view('welcome');
-                   }
-                   return view('welcome');       
-               };
 
         if (auth()->user()->token) {
 

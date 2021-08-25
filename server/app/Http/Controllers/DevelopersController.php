@@ -14,12 +14,13 @@ class DevelopersController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // middleware
+        $this->middleware(['auth', 'verified']);
     }
 
     public function index()
     {
-
+        // if admin redirect to route developer
         if(auth()->user()->name === 'admin') {
             $arr['tokens'] = DB::table('oauth_tokens')->orderBy('user_id', 'asc')->get();
             return view('developers.index')->with($arr);
@@ -30,7 +31,7 @@ class DevelopersController extends Controller
 
     public function delete($user_id) 
     {
-
+        
         DB::table('oauth_tokens')->where('user_id', $user_id)->delete();
         DB::table('oauth_access_tokens')->where('user_id', $user_id)->delete();
         DB::table('oauth_auth_codes')->where('user_id', $user_id)->delete();

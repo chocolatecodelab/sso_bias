@@ -28,12 +28,11 @@ After installing composer dependencies, add your database credentials in `.env` 
 php artisan migrate
 ```
 
-Make sure to create virtual host for `server` app for example `server.test` that
-you will need to use in `client` app.
+Make sure to create virtual host for `server` app `sso.bias-education.com`
 
-### Client App Setup
+### Client App Setup [kepegawaian.bias-education.com]
 
-Now, navigate to `client` app and install
+Now, navigate to `kepegawaian` app and install
 composer dependencies.
 
 ```
@@ -47,12 +46,31 @@ Next, add your database credentials in `.env` file and then run migrations.
 php artisan migrate
 ```
 
-Next, create virtual host for `client` app for example `client.test` that
+Next, create virtual host for `client` app `kepegawaian.bias-education.com `
+you will need to define redirect uri for OAuth2 authorization callback.
+
+### Client App Setup [akademik.bias-education.com]
+
+Now, navigate to `akademik` app and install
+composer dependencies.
+
+```
+cd server
+composer install
+```
+
+Next, add your database credentials in `.env` file and then run migrations.
+
+```
+php artisan migrate
+```
+
+Next, create virtual host for `client` app `akademik.bias-education.com`
 you will need to define redirect uri for OAuth2 authorization callback.
 
 ### Usage
 
-In the server app, navigate to `http://server.test/developers` route. And here
+In the server app, navigate to `http://sso.bias-education.com/developers` route. And here
 create new OAuth client. It will generate client ID and secret.
 
 Next, in the client app, add following configurations in the `.env` file and it is

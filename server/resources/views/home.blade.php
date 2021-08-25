@@ -24,8 +24,8 @@
                         <a href="/developers">Mode Developer</a>
                     @endif
                     <br>
-                    <a href="http://akademik.bias-education.com/" target="_blank">Akademik</a>
-                    <a href="http://kepegawaian.bias-education.com/" target="_blank">Kepegawaian</a>
+                    <a href="http://akademik.bias-education.com:8080/" target="_blank">Akademik</a>
+                    <a href="http://kepegawaian.bias-education.com:8080/" target="_blank">Kepegawaian</a>
                 </div>
             </div>
         </div>
