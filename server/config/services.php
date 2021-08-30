@@ -32,8 +32,8 @@ return [
 
     'google' => [
 
-        'client_id' => '891578633790-dvs57tl61kud4ker1vi220ef88h8cmh3.apps.googleusercontent.com',
-        'client_secret' => 'srqx8rROR_gHxn_rKD4uVe-v',
+        'client_id' => 'client_id',
+        'client_secret' => 'client_secret',
         'redirect' => 'http://sso.bias-education.com:8080/auth/google/callback',
 
     ],

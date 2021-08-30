@@ -64,3 +64,10 @@ OAUTH_SERVER_SECRET=<client=secret>
 OAUTH_SERVER_REDIRECT_URI=http://client.test/oauth/callback
 OAUTH_SERVER_URI=http://server.test
 ```
+
+### Google Auth Setup
+create oauth token app to app google console
+ and then, paste to `config/services`
+
+ ### Email Verify Setup
+ Open your mail, example gmail. and then create mail password in your main for third party. if you not know, learn more about verify email.
